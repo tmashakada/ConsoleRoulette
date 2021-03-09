@@ -7,6 +7,9 @@ package com.wonderlabz.consoleroulette;
 
 import com.wonderlabz.consoleroulette.model.GameProcessor;
 import java.io.FileNotFoundException;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -20,7 +23,13 @@ public class ConsoleRoulette {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        try {
+         ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+        executorService.scheduleAtFixedRate(ConsoleRoulette::run, 0, 30, TimeUnit.SECONDS);
+        
+    }
+    
+     private static void run() {
+          try {
             // TODO code application logic here
             String playerlist="playerlist.txt";
             String previousresults="previousresults.txt";
@@ -30,7 +39,6 @@ public class ConsoleRoulette {
         } catch (FileNotFoundException ex) {
             Logger.getLogger(ConsoleRoulette.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-    }
+     }
     
 }
