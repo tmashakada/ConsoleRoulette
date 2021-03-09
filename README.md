@@ -36,3 +36,4 @@ Tiki_Monkey 1.0 3.
 Barbara 8.0 4.
 
 Tiki_Monkey brought in total win 1.0 and total bet 2.0. He bet 1.0 on number 2 and lost so his total bet has increased to 3.0. Barbara brought in total win 2.0 and total bet 1.0. She bet 3.0 on EVEN and won 6.0. Hence her total win is now 2.0 + 6.0 = 8.0 and her total bet is 1.0 + 3.0 = 4.0.
+
