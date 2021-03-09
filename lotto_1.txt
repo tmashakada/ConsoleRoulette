@@ -1,0 +1,4 @@
+Tiki_Monkey      2             1.0   
+Tiki_Monkey      ODD           4.0   
+Barbara          EVEN          3.0       
+Tiki_Monkey      11            6.0  
