@@ -13,7 +13,26 @@ public class Player {
     private String name;
     private String bet;
     private  double betamount ;
+    private double totawin;
+    private double totalbet;
 
+    public double getTotawin() {
+        return totawin;
+    }
+
+    public void setTotawin(double totawin) {
+        this.totawin = totawin;
+    }
+
+    public double getTotalbet() {
+        return totalbet;
+    }
+
+    public void setTotalbet(double totalbet) {
+        this.totalbet = totalbet;
+    }
+    
+    
     public String getName() {
         return name;
     }

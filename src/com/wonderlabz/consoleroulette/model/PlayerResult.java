@@ -19,7 +19,13 @@ public class PlayerResult {
         this.totalwin = totalwin;
         this.totalbet = totalbet;
     }
-
+  
+    public  void calculateTotalWin(Double  totalw){
+         totalwin+=totalw;
+    }
+    public  void calculateTotalBet(Double  totalb){
+         totalbet+=totalb;
+    }
     public String getName() {
         return name;
     }
